@@ -25,7 +25,7 @@
 		}
 		
 		router.get('/', function (req, res, next) {
-			var perPage = 10;
+			var perPage = req.query.perPage || 10;
 			if (req.query.page > 0) {
 				paginate(req, res, next, perPage);
 				return;
