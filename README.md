@@ -40,7 +40,7 @@ To get pagination simply append '?page=1' at your resource example: '/users?page
 
 The response object will look like this
 
-```json
+```javascript
 {
 	totalPages: 15,
     currentPage: 2,
